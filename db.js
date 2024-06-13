@@ -2,7 +2,7 @@ const mongoose=require('mongoose');
 require('dotenv').config();
 const mongoURL=process.env.MONGODB_URL_LOCAL;
 
-// const mongoURL="mongodb+srv://Yanit123:shiv12345@cluster0.qhrdc1p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+// const mongoURL=process.env.MONGODB_URL;
 mongoose.connect(mongoURL,{
   useNewUrlParser:true,
   useUnifiedTopology:true,
